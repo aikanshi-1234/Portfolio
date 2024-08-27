@@ -26,7 +26,7 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>Hi! I'm Aikanshi Jain</h1>
-                  <p>Passionate developer skilled in building intuitive, responsive applications with expertise in web technologies, problem-solving, and user-centric design.</p>
+                  <p> developer skilled in building intuitive, responsive applications with expertise in web technologies, problem-solving, and user-centric design.</p>
                   <button onClick={() => download(downloadResume)}>Download Resume <ArrowDownCircle size={25} /></button>
                 </div>}
             </TrackVisibility>
