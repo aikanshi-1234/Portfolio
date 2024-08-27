@@ -9,8 +9,6 @@ import webd from '../assets/img/webd.png';
 import android from '../assets/img/android.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from '../assets/img/arrow1.svg';
-import arrow2 from '../assets/img/arrow2.svg';
 import colorSharp from '../assets/img/color-sharp.png'
 
 export const Skills = () => {
@@ -43,39 +41,38 @@ export const Skills = () => {
               <h3> Frontend/Backened</h3>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
-                  <img src={html} alt="Image" />
+                  <img src={html} alt="" />
                 </div>
                 <div className="item">
-                  <img src={js} alt="Image" />
+                  <img src={js} alt="" />
                 </div>
                 <div className="item">
-                  <img src={react} alt="Image" />
-
+                  <img src={react} alt="" />
                 </div>
                 <div className="item">
-                  <img src={cpp} alt="Image" />
+                  <img src={cpp} alt="" />
                 </div>
                 <div className="item">
-                  <img src={mysql} alt="Image" />
+                  <img src={mysql} alt="" />
                 </div>
                 <div className="item">
-                  <img src={nodejs} alt="Image" />
+                  <img src={nodejs} alt="" />
                 </div>
                 <div className="item">
-                  <img src={express} alt="Image" />
+                  <img src={express} alt="" />
                 </div>
                 <div className="item">
-                  <img src={webd} alt="Image" />
+                  <img src={webd} alt="" />
                 </div>
                 <div className="item">
-                  <img src={android} alt="Image" />
+                  <img src={android} alt="" />
                 </div>
               </Carousel>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   )
 }
