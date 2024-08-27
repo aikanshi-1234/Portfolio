@@ -6,6 +6,7 @@ export const Footer = () => {
       <Container>
         <div className="align-items-center justify-content-center">
           <p>Copyright 2022. All Rights Reserved</p>
+
         </div>
       </Container>
     </footer>

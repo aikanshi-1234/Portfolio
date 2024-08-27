@@ -1,4 +1,3 @@
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/navBar";
@@ -7,6 +6,7 @@ import { Skills } from "./components/skills";
 import { Projects } from "./components/projects";
 import { Contact } from "./components/contact";
 import { Footer } from "./components/footer";
+import ScrollViewCounter from "./components/scrollViewCounter"; // Update this import statement
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <ScrollViewCounter />
     </div>
   );
 }
