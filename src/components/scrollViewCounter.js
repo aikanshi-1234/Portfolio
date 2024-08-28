@@ -2,22 +2,22 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const ScrollViewCounter = () => {
-    // Step 1: Set up state for the view count
+
     const [viewCount, setViewCount] = useState(0);
     const [hasScrolled, setHasScrolled] = useState(false);
 
     useEffect(() => {
-        // Step 2: Detect scroll events
+
         const handleScroll = () => {
             if (!hasScrolled) {
-                setHasScrolled(true); // To prevent multiple increments
+                setHasScrolled(true);
                 setViewCount((prevCount) => prevCount + 1);
             }
         };
 
         window.addEventListener('scroll', handleScroll);
 
-        // Cleanup: Remove event listener when the component unmounts
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };

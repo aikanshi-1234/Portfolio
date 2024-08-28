@@ -18,9 +18,3 @@ export const ProjectCard = ({ title, description, imgUrl, url }) => {
   )
 }
 
-ProjectCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  imgUrl: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-};

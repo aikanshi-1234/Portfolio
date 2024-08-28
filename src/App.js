@@ -6,7 +6,7 @@ import { Skills } from "./components/skills";
 import { Projects } from "./components/projects";
 import { Contact } from "./components/contact";
 import { Footer } from "./components/footer";
-import ScrollViewCounter from "./components/scrollViewCounter"; // Update this import statement
+import ScrollViewCounter from "./components/scrollViewCounter";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      <ScrollViewCounter />
+
     </div>
   );
 }

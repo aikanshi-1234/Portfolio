@@ -35,8 +35,6 @@ export const NavBar = () => {
         <Router>
             <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
                 <Container>
-
-
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
                         <span className="navbar-toggler-icon"></span>
                     </Navbar.Toggle>
@@ -48,9 +46,9 @@ export const NavBar = () => {
                         </Nav>
                         <span className="navbar-text">
                             <div className="social-icon">
-                                <a href="https://www.linkedin.com/in/aikanshi-jain-937172204/"><img src={navIcon1} alt="" /></a>
-                                <a href="https://github.com/aikanshi-1234"><img src={gitt} alt="" /></a>
-                                <a href="https://www.instagram.com/aikanshi_jain?igsh=NHdrN2k0YXE3bzk5&utm_source=qr"><img src={navIcon3} alt="" /></a>
+                                <a href="https://www.linkedin.com/in/aikanshi-jain-937172204/"><img src={navIcon1} alt="Linkedin" /></a>
+                                <a href="https://github.com/aikanshi-1234"><img src={gitt} alt="github" /></a>
+                                <a href="https://www.instagram.com/aikanshi_jain?igsh=NHdrN2k0YXE3bzk5&utm_source=qr"><img src={navIcon3} alt="Instagram" /></a>
                             </div>
                             <HashLink to='#connect'>
                                 <button className="vvd"><span>Let’s Connect</span></button>

@@ -5,17 +5,8 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
-  const downloadResume = "http://localhost:3000/#connect/Resume.pdf";
-  const download = (url) => {
-    const fileName = url.split("/").pop();
-    const atag = document.createElement("a");
-    atag.href = url;
-    atag.setAttribute("download", fileName);
-    document.body.appendChild(atag);
-    atag.click();
-    atag.remove();
 
-  }
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -27,7 +18,7 @@ export const Banner = () => {
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>Hi! I'm Aikanshi Jain</h1>
                   <p>Passionate developer skilled in building intuitive, responsive applications with expertise in web technologies, problem-solving, and user-centric design.</p>
-                  <button onClick={() => download(downloadResume)}>Download Resume <ArrowDownCircle size={25} /></button>
+
                 </div>}
             </TrackVisibility>
           </Col>
