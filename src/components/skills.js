@@ -1,3 +1,6 @@
+import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import js from '../assets/img/js.png';
 import html from '../assets/img/html.png';
 import react from '../assets/img/react.png';
@@ -7,9 +10,7 @@ import nodejs from '../assets/img/nodejs.png';
 import express from '../assets/img/express.png';
 import webd from '../assets/img/webd.png';
 import android from '../assets/img/android.png';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import colorSharp from '../assets/img/color-sharp.png'
+import colorSharp from '../assets/img/color-sharp.png';
 
 export const Skills = () => {
   const responsive = {
@@ -31,6 +32,18 @@ export const Skills = () => {
     }
   };
 
+  const skills = [
+    { src: html, alt: "HTML" },
+    { src: js, alt: "JavaScript" },
+    { src: react, alt: "React" },
+    { src: cpp, alt: "C++" },
+    { src: mysql, alt: "MySQL" },
+    { src: nodejs, alt: "Node.js" },
+    { src: express, alt: "Express" },
+    { src: webd, alt: "Web Development" },
+    { src: android, alt: "Android" }
+  ];
+
   return (
     <section className="skill" id="skills">
       <div className="container">
@@ -38,35 +51,25 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <h3> Frontend/Backened</h3>
-              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                <div className="item">
-                  <img src={html} alt="" />
-                </div>
-                <div className="item">
-                  <img src={js} alt="" />
-                </div>
-                <div className="item">
-                  <img src={react} alt="" />
-                </div>
-                <div className="item">
-                  <img src={cpp} alt="" />
-                </div>
-                <div className="item">
-                  <img src={mysql} alt="" />
-                </div>
-                <div className="item">
-                  <img src={nodejs} alt="" />
-                </div>
-                <div className="item">
-                  <img src={express} alt="" />
-                </div>
-                <div className="item">
-                  <img src={webd} alt="" />
-                </div>
-                <div className="item">
-                  <img src={android} alt="" />
-                </div>
+
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={100}
+                customTransition="all 5s linear"
+                transitionDuration={3000}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+                className="owl-carousel owl-theme skill-slider"
+              >
+                {skills.map((skill, index) => (
+                  <div className="item" key={index}>
+                    <img src={skill.src} alt={skill.alt} />
+                  </div>
+                ))}
               </Carousel>
             </div>
           </div>
@@ -74,5 +77,7 @@ export const Skills = () => {
       </div>
       <img className="background-image-left" src={colorSharp} alt="" />
     </section>
-  )
-}
+  );
+};
+
+export default Skills;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from '../assets/img/contact-img.svg';
+import contactImg from '../assets/img/contacts.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
@@ -57,11 +57,12 @@ export const Contact = () => {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} md={6}>
+          <Col xs={20} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
-              }
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={contactImg} alt="H" />
+                </div>}
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>

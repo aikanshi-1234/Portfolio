@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import h from '../assets/img/h.jpg';
-import { ArrowDownCircle } from 'react-bootstrap-icons';
+import h from '../assets/img/h.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -26,7 +25,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={h} alt="H" />
+                  <img src={h} alt="H" className="floating-image" />
                 </div>}
             </TrackVisibility>
           </Col>

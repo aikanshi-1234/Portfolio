@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./projectCard";
-import menses from '../assets/img/menses.jpg';
-import gemini from '../assets/img/gemini.jpg';
-import portfolio from '../assets/img/portfolio-2.png';
+import menses from '../assets/img/menses.png';
+import gemini from '../assets/img/gemini.jpeg';
+import portfolio from '../assets/img/portfolio.jpeg';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -10,6 +10,13 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
     const projects = [
+
+        {
+            title: "Portfolio",
+            description: "React.js",
+            imgUrl: portfolio,
+            url: "https://github.com/aikanshi-1234/Portfolio"
+        },
         {
             title: "Menses",
             description: "Design & Development",
@@ -21,12 +28,6 @@ export const Projects = () => {
             description: "React.js and Gemini API",
             imgUrl: gemini,
             url: "https://github.com/aikanshi-1234/Gemini-c"
-        },
-        {
-            title: "Portfolio",
-            description: "React.js",
-            imgUrl: portfolio,
-            url: "https://github.com/aikanshi-1234/Portfolio"
         },
 
 
