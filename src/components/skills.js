@@ -62,7 +62,7 @@ export const Skills = () => {
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
                 dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
+                itemClass="carousel-item-padding-100-px"
                 className="owl-carousel owl-theme skill-slider"
               >
                 {skills.map((skill, index) => (
